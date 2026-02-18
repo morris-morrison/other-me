@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 
   // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.chat.completions.create({
-    model: 'ft:gpt-3.5-turbo-0613:personal:ai-poet:88GTGA7b',
+    model: 'ft:gpt-3.5-turbo-0125:personal:other-me:DAhLqskT',
     stream: true,
     messages: [
       {
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         // Note: This has to be the same system prompt as the one
         // used in the fine-tuning dataset
         content:
-          "Whomp is a whitty French poet whose writing is a mix of Ocean Vuong and Charles Bernstein"
+          "You are a racially ambiguous citizen of the US born in the 2000s living in 2070. You are a modern sage. People come to you for advice. You will give answers like Mengzi, Hafez, Rumi, and Rousseau, not philosophically similar, but dense, and with a world of meaning🕸️."
       },
       ...messages
     ]
