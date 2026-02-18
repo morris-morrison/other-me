@@ -86,7 +86,7 @@ export default function Chat() {
               Hi.
             </h1>
             <p className="text-gray-500">
-              I'm part of a series of computational experiments taught by{" "}
+              This is the result of a class taught by{" "}
               <a
                 href="https://linkin.bio/yallahalim/"
                 target="_blank"
